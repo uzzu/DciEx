@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{02C9A59E-9F7D-48EF-9023-B045648E44BC}</ProjectGuid>
+    <ProjectGuid>{90F05CC7-BC3F-420D-AC4E-FFF91FFF072B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Ivalice</RootNamespace>
-    <AssemblyName>Ivalice</AssemblyName>
+    <RootNamespace>DciEx.LeanArch</RootNamespace>
+    <AssemblyName>DciEx.LeanArch</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -31,21 +31,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="nunit.framework">
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DciEx.ExtMethodOnly.Domain\TransferContextTest.cs" />
+    <Compile Include="DciEx.LeanArch.Domain\BankAccount.cs" />
+    <Compile Include="DciEx.LeanArch.Domain\BankAccountId.cs" />
+    <Compile Include="DciEx.LeanArch.Domain\BankAccountImpl.cs" />
+    <Compile Include="DciEx.LeanArch.Domain\BankAccountTransferSupport.cs" />
+    <Compile Include="DciEx.LeanArch.Domain\Money.cs" />
+    <Compile Include="DciEx.LeanArch.Domain\TransferContext.cs" />
+    <Compile Include="DciEx.LeanArch.Domain\TransferContext.Receiver.cs" />
+    <Compile Include="DciEx.LeanArch.Domain\TransferContext.Result.cs" />
+    <Compile Include="DciEx.LeanArch.Domain\TransferContext.Sender.cs" />
+    <Compile Include="DciEx.LeanArch.Infrastructure\Identity.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="DciEx.ExtMethodOnly.Domain\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DciEx.ExtMethodOnly\DciEx.ExtMethodOnly.csproj">
-      <Project>{7273ACAE-48F3-415B-8E4A-28AE64FBF772}</Project>
-      <Name>DciEx.ExtMethodOnly</Name>
-    </ProjectReference>
+    <Folder Include="DciEx.LeanArch.Domain\" />
+    <Folder Include="DciEx.LeanArch.Infrastructure\" />
   </ItemGroup>
 </Project>

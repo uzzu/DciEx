@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{02C9A59E-9F7D-48EF-9023-B045648E44BC}</ProjectGuid>
+    <ProjectGuid>{D86EEF34-7456-4A36-86E2-E047289D0199}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Ivalice</RootNamespace>
-    <AssemblyName>Ivalice</AssemblyName>
+    <RootNamespace>DciEx.LeanArch.Test</RootNamespace>
+    <AssemblyName>DciEx.LeanArch.Test</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -36,16 +36,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DciEx.ExtMethodOnly.Domain\TransferContextTest.cs" />
+    <Compile Include="DciEx.LeanArch.Domain\TransferContextTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="DciEx.ExtMethodOnly.Domain\" />
+    <Folder Include="DciEx.LeanArch.Domain\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DciEx.ExtMethodOnly\DciEx.ExtMethodOnly.csproj">
-      <Project>{7273ACAE-48F3-415B-8E4A-28AE64FBF772}</Project>
-      <Name>DciEx.ExtMethodOnly</Name>
+    <ProjectReference Include="..\DciEx.LeanArch\DciEx.LeanArch.csproj">
+      <Project>{90F05CC7-BC3F-420D-AC4E-FFF91FFF072B}</Project>
+      <Name>DciEx.LeanArch</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
